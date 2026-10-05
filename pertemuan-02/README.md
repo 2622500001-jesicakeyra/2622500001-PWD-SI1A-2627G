@@ -9,7 +9,7 @@
 Pada P2 Saya membangun halaman profil menggunakan struktur HTML5 yang valid, elemen sematik, teks, daftar, tautan, dan gambar.
 ## Validasi HTML 
 - Berkas yang divalidasi: 'index.html'
-- Perbaikan yang dilakukan: 
-- Hasil validasi akhir: 
+- Perbaikan yang dilakukan: HTML5 Dasar dan Struktur Semantik 
+- Hasil validasi akhir: Lolos Validasi
 ## GitHub Pages
-URL: 
+URL: https://github.com/2622500001-jesicakeyra/2622500001-PWD-SI1A-2627G/tree/main/pertemuan-02
