@@ -1,4 +1,5 @@
-* {
+<style>
+{
     box-sizing: border-box;
 }
 
@@ -156,3 +157,4 @@ footer {
 footer p {
     margin: 0;
 }
+</style>
