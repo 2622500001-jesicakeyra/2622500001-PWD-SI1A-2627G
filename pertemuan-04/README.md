@@ -1,11 +1,14 @@
 # Pertemuan-04 - CSS3 Layout dan Responsive Web Design
 ## Pengembangan
-- Perubahan yang dilakukan:  Pisahkan CSS dari HTML.
-- Commit dan push GitHub: Perunhahan telah di Commit dan di Push ke repository GitHub.
+Memisahkan CSS ke file style.css.
+Menerapkan Box Model, Flexbox, dan CSS Grid.
+Membuat tampilan responsif untuk HP dan desktop.
+Menyimpan perubahan ke GitHub.
+
 ## Pengujian
-- Perangkat bergerak: 
-- Desktop: 
-- Galat dan perbaikan: 
-- Validasi CSS: 
-## Repositori
-URL GitHub: https://github.com/2622500001-jesicakeyra/2622500001-PWD-SI1A-2627G
+Perangkat bergerak: Tampilan satu kolom dan navigasi vertikal.
+Desktop: Tampilan dua kolom dan navigasi horizontal.
+Galat dan perbaikan: Sesuaikan dengan hasil pengujian.
+Validasi CSS: Sesuaikan dengan hasil validasi.
+
+## URL GitHub: https://github.com/2622500001-jesicakeyra/2622500001-PWD-SI1A-2627G
