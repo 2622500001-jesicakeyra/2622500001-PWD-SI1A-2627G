@@ -9,7 +9,7 @@
 
 <body>
     <?php
-    // Pengujian awal eksekusi PHP
+    // Pengujian awal eksekusi PHP.
     echo "PHP berhasil dijalankan.";
     ?>
     <header>
