@@ -12,3 +12,4 @@ menerapkan pemeriksaan rentang semester
 menerapkan percabangan if elseif else
 menerapkan operator ternary pada profil mahasiswa
 menerapkan percabangan switch case
+menerapkan prulangan for untuk target belajar
