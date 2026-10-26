@@ -11,3 +11,4 @@ menambahkan operator aritmetika PHP
 menerapkan pemeriksaan rentang semester
 menerapkan percabangan if elseif else
 menerapkan operator ternary pada profil mahasiswa
+menerapkan percabangan switch case
