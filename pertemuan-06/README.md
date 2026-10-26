@@ -17,3 +17,4 @@ menerapkan perulangan while untuk nomor semester
 memformat tampilan IPK dengan number_format
 menampilkan catatan tambahan berdasarkan nilai null
 menampilkan tahun dinamis pada footer
+menerapkan sintaks keluaran singkat PHP
