@@ -9,7 +9,7 @@ $semester = 2;
 $ipk = 3.75;
 $statusAktif = true;
 $catatanTambahan = null;
-const NAMA_MATA_KULIAH = "Pemrograman web Dasar";
+const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
 const PROFIL_GITHUB = "satpamal";
 ?>
 <!DOCTYPE html>
@@ -42,7 +42,7 @@ const PROFIL_GITHUB = "satpamal";
     <main>
         <section id="home">
             <h2>Selamat Datang</h2>
-            <p>Halo, saya Jesica Keyra Aprillia. Saya sedang mempelajari Pemrograman Web Dasar.</p>
+            <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; ?>.</p>
             <img src="img/foto profile.jpeg" alt="Foto Profil Jesica Keyra Aprillia" width="200" />
         </section>
 
@@ -68,7 +68,7 @@ const PROFIL_GITHUB = "satpamal";
 
             <p>
                 Kunjungi
-                <a href="https://github.com/2622500001-jesicakeyra">Profil Github saya</a>.
+                <a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">Profil Github saya</a>.
             </p>
 
             <form id="contactForm" action="index.html" method="get" novalidate>

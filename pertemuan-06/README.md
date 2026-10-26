@@ -5,3 +5,5 @@ pengujian komentar, echo, tag dasar PHP
 mempelajari komentar dan keluaran dengan echo dan print di PHP
 membandingkan keluaran tag HTML dan tag HTML di dalam tag PHP
 menambahkan deklarasi variabel PHP
+menambahkan konstanta PHP
+menampilkan data mahasiswa dengan variabel dan konstanta
