@@ -8,3 +8,4 @@ menambahkan deklarasi variabel PHP
 menambahkan konstanta PHP
 menampilkan data mahasiswa dengan variabel dan konstanta
 menambahkan operator aritmetika PHP
+menerapkan pemeriksaan rentang semester
