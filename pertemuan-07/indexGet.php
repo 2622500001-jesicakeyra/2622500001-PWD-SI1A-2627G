@@ -14,13 +14,16 @@ $semester = 1;
 $ipk = 3.75;
 $statusAktif = true;
 $catatanTambahan = null;
+
 const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
 const PROFIL_GITHUB = "https://github.com/2622500001-jesicakeyra?tab=repositories";
+
 // Bagian 2: Operator
 $batasSemester = 8;
 $sisaSemester = $batasSemester - $semester;
 $semesterValid = $semester >= 1 && $semester <= $batasSemester;
 $statusSemester = ($semesterValid && $statusAktif) ? "Sesuai rentang" : "Perlu diperiksa";
+
 // Bagian 3: Percabangan if-elseif-else
 if ($semester < 3) {
     $keteranganSemester = "Semester awal";
@@ -29,7 +32,9 @@ if ($semester < 3) {
 } else {
     $keteranganSemester = "Semester akhir";
 }
+
 $namaProdi = ($programStudi == "SI") ? "Sistem Informasi" : (($programStudi == "TI") ? "Teknik Informatika" : "Lainnya");
+
 // Bagian 4: Percabangahn switch-case-default
 switch ($programStudi) {
     case "SI":
@@ -43,7 +48,7 @@ switch ($programStudi) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

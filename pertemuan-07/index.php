@@ -1,6 +1,7 @@
 <?php
+session_start();
+
 // P7: penggunaan POST
-if (isset($_POST['nama'])) {
     $nama = trim((string) ($_POST['nama'] ?? ''));
     $email = trim((string) ($_POST['email'] ?? ''));
     $semesterForm = trim((string) ($_POST['semester'] ?? ''));
@@ -9,7 +10,6 @@ if (isset($_POST['nama'])) {
     $pesan = trim((string) ($_POST['pesan'] ?? ''));
     $tanggal = trim((string) ($_POST['tanggal'] ?? ''));
     $minat = $_POST['minat'] ?? [];
-}
 
     $pesanKesalahan = '';
 
@@ -87,6 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 }
+
 // P6: PHP dasar pemograman sisi peladen
 // Bagian 1: Variabel dan konstanta
 $nim = "2622500001";
@@ -97,13 +98,16 @@ $semester = 1;
 $ipk = 3.75;
 $statusAktif = true;
 $catatanTambahan = null;
+
 const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
 const PROFIL_GITHUB = "https://github.com/2622500001-jesicakeyra?tab=repositories";
+
 // Bagian 2: Operator
 $batasSemester = 8;
 $sisaSemester = $batasSemester - $semester;
 $semesterValid = $semester >= 1 && $semester <= $batasSemester;
 $statusSemester = ($semesterValid && $statusAktif) ? "Sesuai rentang" : "Perlu diperiksa";
+
 // Bagian 3: Percabangan if-elseif-else
 if ($semester < 3) {
     $keteranganSemester = "Semester awal";
@@ -112,7 +116,9 @@ if ($semester < 3) {
 } else {
     $keteranganSemester = "Semester akhir";
 }
+
 $namaProdi = ($programStudi == "SI") ? "Sistem Informasi" : (($programStudi == "TI") ? "Teknik Informatika" : "Lainnya");
+
 // Bagian 4: Percabangahn switch-case-default
 switch ($programStudi) {
     case "SI":
@@ -124,6 +130,33 @@ switch ($programStudi) {
     default:
     $fokusProgramStudi = "Belum ditentukan";
 }
+
+// P7 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') { 
+    $_SESSION['pesanKesalahan'] = $pesanKesalahan; 
+    
+    $_SESSION['nama'] = $nama; 
+    $_SESSION['email'] = $email;
+    $_SESSION['semester'] = $semesterForm; 
+    $_SESSION['tanggal'] = $tanggal; 
+    $_SESSION['jenis_pesan'] = $jenisPesan; 
+    $_SESSION['prodi'] = $prodi; 
+    $_SESSION['minat'] = $minat; 
+    $_SESSION['pesan'] = $pesan; 
+    
+    header('Location: index.php'); 
+    exit; 
+} 
+
+$pesanKesalahan = $_SESSION['pesanKesalahan'] ?? ''; 
+$nama = $_SESSION['nama'] ?? ''; 
+$email = $_SESSION['email'] ?? ''; 
+$semesterForm = $_SESSION['semester'] ?? '' ; 
+$tanggal = $_SESSION['tanggal'] ?? date("Y-m-d"); 
+$jenisPesan = $_SESSION['jenis_pesan'] ?? ''; 
+$prodi = $_SESSION['prodi'] ?? ''; 
+$minat = $_SESSION['minat'] ?? ''; 
+$pesan = $_SESSION['pesan'] ?? ''; 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -218,10 +251,16 @@ switch ($programStudi) {
         <section id="contact">
             <h2>Kontak</h2>
 
-            <?php if ($pesanKesalahan !== ''): ?> 
+            <?php if ($pesanKesalahan !== ''): ?>
                 <p class="form-feedback-error"> 
                     <?= htmlspecialchars($pesanKesalahan, ENT_QUOTES, 'UTF-8') ?> 
                 </p> 
+
+                <?php
+                unset(
+                    $_SESSION['pesanKesalahan']
+                );
+                ?>
             <?php endif; ?> 
 
             <p>
@@ -363,4 +402,5 @@ switch ($programStudi) {
     </footer> 
     <script src="script.js"></script>
 </body>
+
 </html>
