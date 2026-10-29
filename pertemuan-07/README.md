@@ -4,3 +4,4 @@ menguji http://localhost/pwd/2627g/si1a/2622500001-PWD-SI1A-2627G/2622500001-PWD
 mempelajari penggunaan  parameter GET
 mempraktikan pengiriman folmulir GET
 menyimpan demonstrasi formulir GET
+mengubah formulir utama menjadi POST
