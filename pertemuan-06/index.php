@@ -10,7 +10,7 @@ $ipk = 3.75;
 $statusAktif = true;
 $catatanTambahan = null;
 const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
-const PROFIL_GITHUB = "https://github.com/2622500001-jesicakeyra/2622500001-PWD-SI1A-2627G";
+const PROFIL_GITHUB = "https://github.com/2622500001-jesicakeyra?tab=repositories";
 // Bagian 2: Operator
 $batasSemester = 8;
 $sisaSemester = $batasSemester - $semester;
@@ -132,7 +132,7 @@ switch ($programStudi) {
 
             <p>
                 Kunjungi
-                <a target="_blank" href="https://github.com/2622500001-jesicakeyra/2622500001-PWD-SI1A-2627G<?= PROFIL_GITHUB ?>">Profil Github saya</a>.
+                <a target="_blank" href="https://github.com/2622500001-jesicakeyra?tab=repositories<?= PROFIL_GITHUB ?>">Profil Github saya</a>.
             </p>
 
             <form id="contactForm" action="index.php" method="get" novalidate>
