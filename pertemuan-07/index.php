@@ -3,6 +3,13 @@
 if (isset($_POST['nama'])) {
     $nama = $_POST['nama'];
     echo "Nama yang diterima: " . htmlspecialchars($nama, ENT_QUOTES, 'UTF-8');
+    $email = $_POST['email'] ?? '';
+    $semesterForm = $_POST['semester'] ??'';
+    $tanggal = $_POST['tanggal'] ?? '';
+    $jenisPesan = $_POST['jenisPesan'] ??'';
+    $prodi = $_POST['prodi'] ?? '';
+    $pesan = $_POST['pesan'] ?? '';
+    $minat = $_POST['minat'] ?? '';
 }
 // P6: PHP dasar pemograman sisi peladen
 // Bagian 1: Variabel dan konstanta
@@ -15,7 +22,7 @@ $ipk = 3.75;
 $statusAktif = true;
 $catatanTambahan = null;
 const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
-const PROFIL_GITHUB = "satpamal";
+const PROFIL_GITHUB = "https://github.com/2622500001-jesicakeyra?tab=repositories";
 // Bagian 2: Operator
 $batasSemester = 8;
 $sisaSemester = $batasSemester - $semester;
@@ -137,7 +144,7 @@ switch ($programStudi) {
 
             <p>
                 Kunjungi
-                <a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">Profil Github saya</a>.
+                <a target="_blank" href="https://github.com/2622500001-jesicakeyra?tab=repositories<?= PROFIL_GITHUB ?>">Profil Github saya</a>.
             </p>
 
             <form id="contactForm" action="index.php" method="post" novalidate>
@@ -186,10 +193,10 @@ switch ($programStudi) {
                  <div class="form-group">
                      <p>Topik yang Diminati</p>
 
-                     <input type="checkbox" id="minat-html" name="minat" value="HTML" />
+                     <input type="checkbox" id="minat-html" name="minat[]" value="HTML" />
                      <label for="minat-html">HTML</label>
 
-                     <input type="checkbox" id="minat-css" name="minat" value="CSS" />
+                     <input type="checkbox" id="minat-css" name="minat[]" value="CSS" />
                      <label for="minat-css">CSS</label>
                 </div>
 
