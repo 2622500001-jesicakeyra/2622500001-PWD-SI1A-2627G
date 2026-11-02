@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: "Times New Roman", serif;
+}
+#header {
+    background-color: #3582ff;
+    padding: 15px 20px;
+}
+#header h1 {
+    margin: 0;
+    font-weight: normal;
+}
+#menu {
+    float: left;
+    width: 130px;
+    height: 400px;
+    background-color: #5496ff;
+    text-align: center;
+    padding-top: 30px;
+}
+#menu a {
+    display: block;
+    margin-bottom: 60px;
+    color: #0062ff;
+}
+#isi {
+    margin-left: 130px;
+    min-height: 370px;
+    padding: 30px;
+    background-color: #bbd5ff;
+}
+#isi h2 {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+#gambar img {
+    width: 100px;
+    height: 100px;
+}
+.profil img {
+    display: inline-block;
+    width: 110px;
+    margin: 10px;
+    text-align: justify;
+}
+.pantai {
+    display: inline-block;
+    width: 110px;
+    margin: 15px;
+    text-align: justify;
+}
+.pantai img {
+    width: 100px;
+    height: 100px;
+}
+#isi .pantai p {
+    display: inline-block;
+    font-size: 12px;
+    text-align: justify;
+}
+#isi p {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: justify;
+}
+#footer {
+    clear: both;
+    background-color: #307fff;
+    padding: 15px 30px;
+    font-weight: bold;
+}
