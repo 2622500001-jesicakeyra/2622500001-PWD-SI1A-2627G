@@ -43,17 +43,17 @@ body {
     margin: 10px;
     text-align: justify;
 }
-.pantai {
+.aice {
     display: inline-block;
     width: 110px;
     margin: 15px;
     text-align: justify;
 }
-.pantai img {
+.aice img {
     width: 100px;
     height: 100px;
 }
-#isi .pantai p {
+#isi .aice p {
     display: inline-block;
     font-size: 12px;
     text-align: justify;

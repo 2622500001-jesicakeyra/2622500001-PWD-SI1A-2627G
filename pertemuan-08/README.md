@@ -1,5 +1,5 @@
 # pertemuan-08
-penambahan foto pantai
+penambahan foto aice
 penambahan foto profil
 menambahkan isi index.html
 menambah file baru profil.html
