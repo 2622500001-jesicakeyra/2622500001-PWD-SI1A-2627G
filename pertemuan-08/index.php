@@ -9,9 +9,10 @@
         <h1>Aice Ice Cream Store</h1>
     </div>
     <div id="menu">
-        <a href="index.html">Home</a>
-        <a href="profil.html">Profil</a>
-        <a href="tentang.html">Tentang</a>
+        <a href="index.php">Home</a>
+        <a href="profil.php">Profil</a>
+        <a href="tentang.php">Tentang</a>
+        <a href="registrasi.php">Registrasi</a>
     </div>
     <div id="isi">
         <h2>Selamat Datang</h2>
@@ -28,7 +29,7 @@
             Selamat datang di Aice Ice Cream Store, tempatnya berbagai pilihan es krim lezat yang siap membuat harimu semakin berwarna! 
         </p>
         <p>
-            Nikmati berbagai varian es krim Aice dengan rasa yang unik, tekstur lembut, menyegarkan, dan harga yang ramah di kantong. Mulai dari cokelat, stroberi, vanila, hingga berbagai rasa favorit lainnya
+            Nikmati berbagai varian es krim Aice dengan rasa yang unik, tekstur lembut, menyegarkan, dan harga yang ramah di kantong. Mulai dari cokelat, vanila, hingga berbagai rasa favorit lainnya
         </p>
         <p> 
             Temukan es krim kesukaanmu untuk menemani waktu santai bersama teman dan keluarga. Yuk, jelajahi koleksi es krim kami dan rasakan keseruannya!
@@ -37,5 +38,6 @@
     <div id="footer">
         2622500001_Jesica Keyra Aprillia_SI1A_UTS Pemograman Web Dasar
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

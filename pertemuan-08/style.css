@@ -16,17 +16,17 @@ body {
     height: 400px;
     background-color: #5496ff;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 42px;
 }
 #menu a {
     display: block;
     margin-bottom: 60px;
-    color: #0062ff;
+    color: #003486;
 }
 #isi {
     margin-left: 130px;
     min-height: 370px;
-    padding: 30px;
+    padding: 36px;
     background-color: #bbd5ff;
 }
 #isi h2 {
@@ -68,4 +68,35 @@ body {
     background-color: #307fff;
     padding: 15px 30px;
     font-weight: bold;
+}
+#contact {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    padding: 18px;
+    margin: 0;
+}
+#contact h2 {
+    color: #003366;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 6px;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+.form-group {
+    margin: 10px 0;
+}
+#contact label {
+    color: #1f2937;
+    font-weight: bold;
+}
+.input-form {
+    width: 100%;
+    max-width: 100%;
+    background-color: #ffffff;
+    color: #111827;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    padding: 3px;
+    margin: 2px 0;
+    border: 1px solid #94a3b8;
 }
