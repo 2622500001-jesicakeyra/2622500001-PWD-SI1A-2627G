@@ -1,2 +1,6 @@
 # pertemuan-10
 memeriksa kesiapan phpMyAdmin dan repositori pertemuan-10
+Masukkan nama basis data sesuai pola db_pwd_nim
+Membuat Tabel tbl_kontak_nim 
+Mengisi Struktur Sembilan Kolom
+memamasukan data awal ke tabel kontak
