@@ -9,11 +9,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nama = trim((string) ($_POST["nama"] ?? ""));
     $email = trim((string) ($_POST["email"] ?? ""));
     $semesterForm = trim((string) ($_POST["semester"] ?? ""));
+    $tanggal = trim((string) ($_POST["tanggal"] ?? ""));
     $jenisPesan = trim((string) ($_POST["jenis_pesan"] ?? ""));
+    $minat = $_POST["minat"] ?? [];
     $prodi = trim((string) ($_POST["prodi"] ?? ""));
     $pesan = trim((string) ($_POST["pesan"] ?? ""));
-    $tanggal = trim((string) ($_POST["tanggal"] ?? ""));
-    $minat = $_POST["minat"] ?? [];
 
     // Checkbox dapat mengirimkan lebih dari satu nilai.
     if (!is_array($minat)) {
@@ -25,11 +25,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         "nama" => $nama,
         "email" => $email,
         "semester" => $semesterForm,
+        "tanggal" => $tanggal,
         "jenis_pesan" => $jenisPesan,
+        "minat" => $minat,
         "prodi" => $prodi,
         "pesan" => $pesan,
-        "tanggal" => $tanggal,
-        "minat" => $minat
     ];
 
     // PRG: mengarahkan kembali ke halaman sebelum menghasilkan keluaran HTML.
