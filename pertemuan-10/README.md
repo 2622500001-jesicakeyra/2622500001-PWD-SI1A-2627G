@@ -7,3 +7,4 @@ memamasukan data awal ke tabel kontak
 menentukan pengaturan ekspor basis data
 mengekspor basis data ke berkas SQL
 memeriksa kelengkapan berkas ekspor SQL
+menambahkan index.php dan fungsi.php serta script.js
