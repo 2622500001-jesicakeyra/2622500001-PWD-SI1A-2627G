@@ -8,3 +8,4 @@ mengatur pelaporan kesalahan MySQLi P11
 menguji koneksi dari PHP ke MySQL dengan file sementara Bersama uji_koneksi.php
 menguji penanganan kegagalan koneksi PHP-MySQL
 menyiapkan pemuatan berkas koneksi pada P11
+mengintegrasikan berkas koneksi pada index P11
