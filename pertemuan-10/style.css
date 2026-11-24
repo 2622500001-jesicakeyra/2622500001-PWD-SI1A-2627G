@@ -1,19 +1,19 @@
 * {
-    box-sizing: border-box;
+box-sizing: border-box;
 }
 
 body {
     margin: 0;
     padding: 12px;
     font-family: Arial, sans-serif;
-    color:#111827;
-    background-color:#eef2f7;
+    color: #111827;
+    background-color: #eef2f7;
 }
 
-/*header */
+/* Header */
 header {
-    background-color:#003366;
-    color:#ffffff;
+    background-color: #003366;
+    color: #ffffff;
     padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #00264d;
@@ -50,7 +50,6 @@ header h1 {
     cursor: pointer;
 }
 
-/* Navigasi */
 nav ul {
     display: flex;
     flex-direction: column;
@@ -68,7 +67,6 @@ nav a {
     text-decoration: none;
 }
 
-/* Layout utama */
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -79,7 +77,6 @@ section {
     width: 100%;
 }
 
-/* Bagian Home */
 #home {
     background-color: #ffffff;
     border: 1px solid #d0d7de;
@@ -108,7 +105,6 @@ section {
     border: 1px solid #cbd5e1;
 }
 
-/* Bagian Tentang */
 #about {
     background-color: #ffffff;
     border: 1px solid #d0d7de;
@@ -143,7 +139,6 @@ section {
     border: 1px solid #e6e6e6;
 }
 
-/* Bagian Kontak */
 #contact {
     background-color: #f8fafc;
     border: 1px solid #cbd5e1;
@@ -181,8 +176,8 @@ section {
 }
 
 #contact textarea {
-   min-height: 80px;
-   resize: vertical;
+    min-height: 80px;
+    resize: vertical;
 }
 
 #contact button {
@@ -195,7 +190,6 @@ section {
     cursor: pointer;
 }
 
-/* Footer */
 footer {
     background-color: #003366;
     color: #ffffff;
@@ -210,40 +204,39 @@ footer p {
 }
 
 .form-feedback-error {
-    color: #c62828 ;
+    color: #c62828;
 }
 
 .form-feedback-success {
     color: #2e7d32;
 }
 
-/* Layout untuk viewport yang lebih lebar */
 @media (min-width: 768px) {
     nav {
         margin-top: 16px;
     }
 
     nav ul {
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 16px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
     }
 
     main {
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     }
 
     #contact {
-        grid-column: 1 / -1;
+    grid-column: 1 / -1;
     }
 
     #navMenu {
-        display: flex;
-        flex-direction: row;
+    display: flex;
+    flex-direction: row;
     }
 
     .nav-toggle {
-        display: none;
+    display: none;
     }
 }
