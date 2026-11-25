@@ -9,6 +9,10 @@ while ($baris = mysqli_fetch_assoc($hasil)) {
     $dataKontak[] = $baris;
 }
 
+/* echo "<pre>"; 
+var_dump($dataKontak);
+echo "</pre>"; */
+
 if (!$hasil) {
   die("Kueri SELECT gagal dijalankan.");
 }
