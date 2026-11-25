@@ -4,6 +4,10 @@ require_once("koneksi.php");
 
 $sql = "SELECT * FROM tbl_kontak_2622500001";
 $hasil = mysqli_query($koneksi, $sql);
+$dataKontak = [];
+while ($baris = mysqli_fetch_assoc($hasil)) {
+    $dataKontak[] = $baris;
+}
 
 if (!$hasil) {
   die("Kueri SELECT gagal dijalankan.");
