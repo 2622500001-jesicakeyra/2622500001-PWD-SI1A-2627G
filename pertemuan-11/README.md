@@ -12,3 +12,4 @@ mengintegrasikan berkas koneksi pada index P11
 menguji integrasi koneksi PHP-MySQL pada index P11
 menentukan kueri SELECT data kontak
 menjalankan kueri SELECT menggunakan MySQLi
+menambahkan pemeriksaan kegagalan kueri SELECT

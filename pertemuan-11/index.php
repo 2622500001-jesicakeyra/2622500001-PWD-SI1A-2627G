@@ -5,6 +5,10 @@ require_once("koneksi.php");
 $sql = "SELECT * FROM tbl_kontak_2622500001";
 $hasil = mysqli_query($koneksi, $sql);
 
+if (!$hasil) {
+  die("Kueri SELECT gagal dijalankan.");
+}
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 $nama = trim((string) ($_POST["nama"] ?? "")); 
 $email = trim((string) ($_POST["email"] ?? "")); 
